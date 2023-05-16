@@ -1,0 +1,56 @@
+CREATE DATABASE biblioteca;
+
+CREATE TABLE genero(
+  codigo_genero INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(30)
+);
+
+CREATE TABLE editora(
+  codigo_editora INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(50)
+);
+
+CREATE TABLE autor(
+  codigo_autor INT NOT NULL  AUTO_INCREMENT PRIMARY KEY,
+  nome_completo VARCHAR(50),
+  nome VARCHAR(30),
+  sobrenome VARCHAR(30)
+);
+
+CREATE TABLE aluno(
+  matricula INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(50),
+  fone VARCHAR(15),
+  endereco VARCHAR(100),
+  sexo VARCHAR(1),
+  CPF VARCHAR(11),
+  email VARCHAR(50)
+);
+
+CREATE TABLE livro(
+  codigo_livro INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  ano INT,
+  edicao INT,
+  nome VARCHAR(50)
+);
+
+ALTER TABLE livro
+  ADD codigo_autor INT;
+
+ALTER TABLE livro
+  ADD FOREIGN KEY livro(codigo_autor) REFERENCES autor(codigo_autor);
+
+ALTER TABLE livro
+  ADD codigo_editora INT;
+
+ALTER TABLE livro
+  ADD CONSTRAINT codigo_editora 
+  FOREIGN KEY (codigo_editora) REFERENCES editora (codigo_editora );
+
+
+ALTER TABLE livro
+  ADD codigo_genero INT;
+
+ALTER TABLE livro
+  ADD CONSTRAINT codigo_genero 
+  FOREIGN KEY (codigo_genero) REFERENCES genero(codigo_genero);
