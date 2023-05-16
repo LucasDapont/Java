@@ -54,3 +54,6 @@ ALTER TABLE livro
 ALTER TABLE livro
   ADD CONSTRAINT codigo_genero 
   FOREIGN KEY (codigo_genero) REFERENCES genero(codigo_genero);
+  
+ALTER TABLE editora CHANGE codigo_editora id INT NOT NULL AUTO_INCREMENT
+MUDAR O NOME DAS CHAVES E TAL TAL TAL
