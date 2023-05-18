@@ -13,10 +13,10 @@
    <tr>
        <th>AAAAAA</th>
        <th>BBBBBB</th>
-       <th>SSSSSS</th>
-       <th>PPPPPP</th>
-       <th>KKKKKK</th>
-       <th>ZZZZZZ</th>
+       <th>CCCCCC</th>
+       <th>DDDDDD</th>
+       <th>EEEEEE</th>
+       <th>FFFFFF</th>
    </tr>
    </thead>
    <td><form>
@@ -201,6 +201,8 @@
 </form></td>
     </tr>
 </table>
+        <br>
+        <input type="submit" value="Enviar"/>
     </center>
         <style>
 	table, th{
