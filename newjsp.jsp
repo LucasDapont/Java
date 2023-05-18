@@ -7,6 +7,7 @@
     </head>
     <body>
     <center> <h2> Nossos Fornecedores </h2> 
+        <form>
 <table border=9>
     <tr>
         <thead>
@@ -21,15 +22,15 @@
    </thead>
    <td><form>
   <label for="0"></label>
-  <input type="text" id="0" name="0">
+  <input type="text">
 </form></td>
 <td><form>
   <label for="0"></label>
-  <input type="text" id="0" name="0">
+  <input type="text">
 </form></td>
 <td><form>
   <label for="0"></label>
-  <input type="text" id="0" name="0">
+  <input type="text">
 </form></td>
         <td><form>
   <label for="0"></label>
@@ -201,6 +202,7 @@
 </form></td>
     </tr>
 </table>
+    </form>
         <br>
         <input type="submit" value="Enviar"/>
     </center>
