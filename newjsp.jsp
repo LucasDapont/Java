@@ -11,12 +11,12 @@
     <tr>
         <thead>
    <tr>
-       <th>AAAAAA</th>
-       <th>BBBBBB</th>
-       <th>CCCCCC</th>
-       <th>DDDDDD</th>
-       <th>EEEEEE</th>
-       <th>FFFFFF</th>
+       <th>Email</th>
+       <th>Fornecedor</th>
+       <th>Usuário</th>
+       <th>CNPJ</th>
+       <th>Endereço</th>
+       <th>Número de telefone</th>
    </tr>
    </thead>
    <td><form>
