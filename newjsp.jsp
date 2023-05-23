@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Fornecedores</title>
+        <title>Nossos Fornecedores</title>
     </head>
     <body>
     <center> <h2> Nossos Fornecedores </h2> 
