@@ -1,0 +1,10 @@
+CREATE TABLE user_table(
+user_code INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+userName VARCHAR(30),
+UserPass VARCHAR(30)
+);
+
+INSERT INTO user_table(userName, userPass) VALUES ("andreza", "12");
+
+SELECT * FROM user_table
+
